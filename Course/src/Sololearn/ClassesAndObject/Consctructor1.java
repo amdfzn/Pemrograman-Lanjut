@@ -11,6 +11,14 @@ class Person {
         age = myage;
     }
 
+    public Person() {
+
+    }
+
     public void setAge(int i) {
+    }
+
+    public int getAge() {
+        return age;
     }
 }

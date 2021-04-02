@@ -1,6 +1,6 @@
 package Sololearn.ClassesAndObject;
 
-public class ReferenceTypes {
+class ReferenceTypes {
     public static void main(String[] args) {
         Person p = new Person();
         p.setAge(25);

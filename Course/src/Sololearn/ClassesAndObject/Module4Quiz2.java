@@ -1,8 +1,10 @@
 package Sololearn.ClassesAndObject;
 
-public class Module4Quiz2 {
+class Module4Quiz2 {
     public static void main(String[] args) {
-        public int minFunc ( int n1, int n2){
+        minFunc(2,1);
+    }
+        private static int minFunc (int n1, int n2){
 
             int min;
             if (n1 > n2) {
@@ -11,6 +13,6 @@ public class Module4Quiz2 {
                 min = n1;
                 return min;
             }
+            return min;
         }
     }
-}

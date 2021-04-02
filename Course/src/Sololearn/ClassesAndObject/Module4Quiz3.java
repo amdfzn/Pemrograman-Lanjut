@@ -6,7 +6,7 @@ public class Module4Quiz3 {
     }
 
     private static void myFunc() {
+
         System.out.println("Hi");
-        }
     }
 }

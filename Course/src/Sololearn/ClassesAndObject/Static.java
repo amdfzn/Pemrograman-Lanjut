@@ -1,15 +1,16 @@
 package Sololearn.ClassesAndObject;
 
-public class Static {
+class Static {
     public static void main(String[] args) {
 
     }
 class Person {
-        public static int pCount;
-        public static void main(String[ ] args) {
-            Person.pCount = 1;
-            Person.pCount++;
-            System.out.println(Person.pCount);
-        }
+    private int pCount;
+    public void pCount(){
+         Person.this.pCount = 1;
+         Person.this.pCount = Person.this.pCount + 1;
+         System.out.println(Person.this.pCount);
+     }
+
     }
 }
