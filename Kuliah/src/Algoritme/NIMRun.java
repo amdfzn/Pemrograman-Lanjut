@@ -11,7 +11,7 @@ public class NIMRun {
         System.out.println("Tahun Masuk = "+objNim.getTahunMasuk());
         System.out.println("Fakultas = "+objNim.getFakultas());
         System.out.println("Jurusan = "+objNim.getJurusan());
-        System.out.println("Jenis kelamin = "+objNim.getJenisKelamin());
+        System.out.println("Jenis Kelamin = "+objNim.getJenisKelamin());
         System.out.println("Nomor Urut = "+objNim.getNomorUrutMahasiswa());
     }
 }

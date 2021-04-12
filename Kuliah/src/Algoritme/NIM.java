@@ -17,17 +17,12 @@ public class NIM {
         }else if (kodeJenjang == '3'){
             return "S3";
         }
-        return "Error";
+        return "Anda tidak terdaftar sebagai mahasiswa UIN SUSKA Riau";
     }
     public String getTahunMasuk() {
         char kodeTahun1 = nim.charAt(1);
         char kodeTahun2 = nim.charAt(2);
-        if (kodeTahun1 == '2' && kodeTahun2 == '0'){
-            return "2020";
-        }else if (kodeTahun1 == '1' && kodeTahun2 == '9'){
-            return "2019";
-        }
-        return "Tahun masukmu terlalu lama mas";
+        return "20" + kodeTahun1 + kodeTahun2;
     }
     public String getFakultas(){
         char kodeFakultas = nim.charAt(3);
@@ -57,9 +52,15 @@ public class NIM {
         if(kodeJurusan == '0' && kodeJurusan2 == '1'){
             return "Teknik Informatika";
         }else if(kodeJurusan == '0'&& kodeJurusan2 == '2'){
+            return "Teknik Industri";
+        }else if(kodeJurusan == '0'&& kodeJurusan2 == '3'){
             return "Sistem Informasi";
+        }else if(kodeJurusan == '0'&& kodeJurusan2 == '4'){
+            return "Matematika";
+        }else if(kodeJurusan == '0'&& kodeJurusan2 == '5'){
+            return "Teknik Elektro";
         }else{
-            return "Anda bukan mahasiwa Fakultas Saintek";
+            return "Anda bukan Mahasiswa Fakultas Saintek";
         }
     }
     public String getJenisKelamin(){
@@ -73,7 +74,7 @@ public class NIM {
     }
     public String getNomorUrutMahasiswa() {
         String nomorUrut = nim.substring(7);
-        final String nomorUrut1 = nomorUrut;
+        String nomorUrut1 = nomorUrut;
         return nomorUrut1;
     }
 }
