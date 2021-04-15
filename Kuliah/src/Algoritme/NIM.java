@@ -11,11 +11,11 @@ public class NIM {
     public String getJenjang() {
         char kodeJenjang = nim.charAt(0);
         if (kodeJenjang == '1'){
-            return "S1";
+            return "S1 (Sarjana)";
         }else if (kodeJenjang == '2'){
-            return "S2";
+            return "S2 (Magister)";
         }else if (kodeJenjang == '3'){
-            return "S3";
+            return "S3 (Doktor)";
         }
         return "Anda tidak terdaftar sebagai mahasiswa UIN SUSKA Riau";
     }
