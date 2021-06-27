@@ -8,7 +8,7 @@ public class Factorial {
     public void setNum(long num) {
         this.num = num;
     }
-    public long rekursif(long num) {
+    public long rekursif(long num) {//proses rekursif
         if(num == 0 || num == 1){
             return 1;
         }else{

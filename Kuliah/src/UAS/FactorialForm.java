@@ -15,9 +15,12 @@ public class FactorialForm {
         generateButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                //mengambil inputan dan merubahnya ke tipedata long
                 long num = Long.valueOf(inputField.getText());
+                //membuat object dari kelas Factorial dan mengolah data
                 Factorial fc = new Factorial();
                 fc.setNum(num);
+                //memanggil data di kelas Factorial dan merubahnya kedalam tipedata string
                 resultField.setText(String.valueOf(fc.rekursif(num)));
 
             }
@@ -25,8 +28,9 @@ public class FactorialForm {
         clearButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            inputField.setText("");
-            resultField.setText("");
+                //membuat field menjadi kosong
+                inputField.setText("");
+                resultField.setText("");
             }
         });
     }
